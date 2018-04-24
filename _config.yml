@@ -1,1 +1,34 @@
 theme: jekyll-theme-cayman
+
+# Dependencies
+markdown:       kramdown
+highlighter:    rouge
+
+kramdown:
+  auto_ids:     true
+
+# Permalinks
+permalink:      pretty
+
+plugins:
+  - jekyll-redirect-from
+  - jekyll-sitemap
+  - jekyll-toc
+
+# Social
+title:              Alertme
+description:        "Provide subscription-based alerts to your users"
+authors:            "Eric Layne, RDA Corp"
+
+# Custom variables
+current_version:      1.0.4
+docs_version:         1.0
+repo:                 "https://github.com/alertmehub/alertmehub.github.io"
+
+download:
+  source:           "https://github.com/twbs/bootstrap/archive/v4.1.0.zip"
+  dist:             "https://github.com/twbs/bootstrap/releases/download/v4.1.0/bootstrap-4.1.0-dist.zip"
+
+toc:
+  min_level:        2
+  max_level:        4
