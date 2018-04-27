@@ -25,54 +25,72 @@ layout: default
       <div class="row">
         <div class="col s12 m4">
           <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">flash_on</i></h2>
+            <h2 class="center light-blue-text"><i class="material-icons">add_alert</i></h2>
             <h5 class="center">Speeds up development</h5>
 
-            <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
+            <p class="light">Quickly add preference management and alerting to your website by dropping in our prebuilt component and using our SaaS services.</p>
           </div>
         </div>
 
         <div class="col s12 m4">
           <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">group</i></h2>
-            <h5 class="center">User Experience Focused</h5>
+            <h2 class="center light-blue-text"><i class="material-icons">done</i></h2>
+            <h5 class="center">Easy User Opt-in</h5>
 
-            <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
+            <p class="light">Comply with emerging regulations such as GDPR by allowing users to subscribe to only the alerts they choose.  Alertme
+              keeps an audit trail of active opt-in. </p>
           </div>
         </div>
 
         <div class="col s12 m4">
           <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">settings</i></h2>
-            <h5 class="center">Easy to work with</h5>
+            <h2 class="center light-blue-text"><i class="material-icons">security</i></h2>
+            <h5 class="center">Security Simply</h5>
 
-            <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
+            <p class="light">Securely stores PII like phone and email in our secure cloud database.</p>
           </div>
         </div>
       </div>
+    </div>
 
     </div>
 
+    <div class="divider"></div>
+    <div class="section">
+        <h5>Overview</h5>
+        <div class="row">
+                <div class="col s6">
+                  <span class="flow-text">The Alertme service consists of </span>
+                  <ol>
+                    <li>An administration website where alert topics are configured by your administrator.</li>
+                    <li>A UI component that is dropped into your existing application that enables your users to
+                      subscribe to alert topics.
+                    </li>
+                    <li>A set of backend services used to store the topics and subscriptions.</li>
+                  </ol>
+                </div>
+                <div class="col s6"><span class="flow-text"><img src="/assets/overview.PNG"></span></div>
+        </div>
     </div>
     <div style="background: #ddd">
-    <div class="container last-post">
-    <section>
-        <h5>Latest Post</h5>
-        <ul class="collection">
-        {% for post in site.posts %}
-        <li class="collection-item avatar">
-          {% assign date_format = site.minima.date_format | default: "%m/%d" %}
-          <div class="date-post">{{ post.date | date: date_format }}</div>
-          <span class="title"><a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></span>
-          <p>
-             {{ post.content | truncatewords: 10 }}
-          </p>
-          <a href="{{ post.url | relative_url }}" class="secondary-content"><i class="material-icons">navigate_next</i></a>
-        </li>
-        {% endfor %}
-        </ul>
-    </section>
-    </div>
-</div>
-
+      <div class="container last-post">
+      <section>
+          <h5>Latest Post</h5>
+          <ul class="collection">
+          {% for post in site.posts %}
+          <li class="collection-item avatar">
+            {% assign date_format = site.minima.date_format | default: "%m/%d" %}
+            <div class="date-post">{{ post.date | date: date_format }}</div>
+            <span class="title"><a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></span>
+            <p>
+              {{ post.content | truncatewords: 10 }}
+            </p>
+            <a href="{{ post.url | relative_url }}" class="secondary-content"><i class="material-icons">navigate_next</i></a>
+          </li>
+          {% endfor %}
+          </ul>
+      </section>
+      </div>
   </div>
+
+</div>
