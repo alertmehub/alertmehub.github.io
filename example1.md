@@ -1,54 +1,23 @@
 ---
 layout: page
-title: Buttons
-permalink: /Buttoms/
+title: Getting Started
+permalink: /getstarted/
 ---
 
-<h1 class="page-title">{{ page.title | escape }}</h1>
+# Getting Started
+Getting started with the alertme service involves three simple steps:
+1.	Signing up and creating topics.
+2.	Deploying the alertme component into your application.
+3.	Publishing alerts
 
-<div class="section">
-    <h5>Raised</h5> 
+## Signing Up
+In order to use the Alertme service, you must first sign up for an account at https://admin.alertmehub.com/register/  
 
-    <div class="row">
-          <div class="col s12">
-                <a class="waves-effect waves-light btn">button</a>
-                <a class="waves-effect waves-light btn"><i class="material-icons left">cloud</i>button</a>
-                <a class="waves-effect waves-light btn"><i class="material-icons right">cloud</i>button</a>
-          </div>
-    </div>
-</div>
-<div class="divider"></div>
-<div class="section">
-    <h5>Floating</h5> 
+Pick a publisher id for your organization – typically the domain where the Alertme component will be placed.  Pick a password, and provide the name and email of the administrator for this publisher id.  The email will only be used to contact the administrator with important information about the Alertme service.
 
-    <div class="row">
-            <div class="col s12">
-                <a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></a>
-            </div>
-    </div>
-</div>
-<div class="divider"></div>
-<div class="section">
-    <h5>Large</h5> 
-
-    <div class="row">
-          <div class="col s12">
-                <a class="waves-effect waves-light btn-large">Button</a>
-                <a class="waves-effect waves-light btn-large"><i class="material-icons left">cloud</i>button</a>
-                <a class="waves-effect waves-light btn-large"><i class="material-icons right">cloud</i>button</a>
-          </div>
-    </div>
-</div>
-<div class="divider"></div>
-<div class="section">
-    <h5>Disabled</h5> 
-
-    <div class="row">
-        <div class="col s12">
-                <a class="btn-large disabled">Button</a>
-                <a class="btn disabled">Button</a>
-                <a class="btn-flat disabled">Button</a>
-                <a class="btn-floating disabled"><i class="material-icons">add</i></a>      
-        </div>
-    </div>
-</div>
+## Creating Topics
+After signing into the Alertme Administration portal, the first step is to define the Topics to which subscribers can subscribe to receive alerts.  For example, the bank contoso.com might define the following topics:
+•	Low Balance Alert
+•	Large Transaction Alert
+•	Scheduled Transfer Reminder
+The topics you define will be driven by your business model.
