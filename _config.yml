@@ -1,11 +1,10 @@
-title: Starter Template
-author: Panoramedia
-email: panoramedia@gmail.com
+title: Alertme
+author: RDA
+email: layne@rdacorp.com
 description: > # this means to ignore newlines until "baseurl:"
-  A Site Starter Materialize Templates for Jekyll
+  Documentation on the Alertme service
 
-twitter_username: macrod68
-github_username:  macrod68
+github_username:  layne1990
 
 sass:
     style: compressed

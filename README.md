@@ -1,15 +1,9 @@
-# Jekyll Materialize Starter Template v0.1
+# Alertme Docs
+The documentation for the Alertme service.
 
-*A Site Starter Materialize Templates.
+# Credits
 
-The theme is a fork of the [minima][1]
-
-![minima theme preview](/screenshot.png)
-
-
-# License
-
-The theme is available as open source under the terms of the [MIT License][2].
+Based off of the Materialize Starter Template v0.1
 
 [Materialize][3] a  modern responsive front-end framework based on Material Design
 
