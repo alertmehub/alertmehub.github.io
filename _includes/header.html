@@ -1,5 +1,8 @@
-<nav class="grey lighten-1" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" class="brand-logo" href="{{ "/" | relative_url }}"><img src="/assets/alertmet.png"></a>
+<nav class="black lighten-1" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" class="brand-logo" href="{{ "/" | relative_url }}">
+        {{ site.title }}
+      </a>
     {% assign default_paths = site.pages | map: "path" %}
     {% assign page_paths = site.header_pages | default: default_paths %}
 
