@@ -1,34 +1,11 @@
-theme: jekyll-theme-cayman
+title: Starter Template
+author: Panoramedia
+email: panoramedia@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  A Site Starter Materialize Templates for Jekyll
 
-# Dependencies
-markdown:       kramdown
-highlighter:    rouge
+twitter_username: macrod68
+github_username:  macrod68
 
-kramdown:
-  auto_ids:     true
-
-# Permalinks
-permalink:      pretty
-
-plugins:
-  - jekyll-redirect-from
-  - jekyll-sitemap
-  - jekyll-toc
-
-# Social
-title:              Alertme
-description:        "Provide subscription-based alerts to your users"
-authors:            "Eric Layne, RDA Corp"
-
-# Custom variables
-current_version:      1.0.4
-docs_version:         1.0
-repo:                 "https://github.com/alertmehub/alertmehub.github.io"
-
-download:
-  source:           "https://github.com/twbs/bootstrap/archive/v4.1.0.zip"
-  dist:             "https://github.com/twbs/bootstrap/releases/download/v4.1.0/bootstrap-4.1.0-dist.zip"
-
-toc:
-  min_level:        2
-  max_level:        4
+sass:
+    style: compressed

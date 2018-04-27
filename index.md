@@ -1,6 +1,5 @@
------------------
-title: Alertme
------------------
+---
+layout: home
+---
 
-# Alertme Documentation
-This is the documentation for the alertme service.
+A Site Starter Materialize Templates for Jekyll.
