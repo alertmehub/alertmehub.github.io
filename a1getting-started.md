@@ -101,6 +101,7 @@ And set the document body to a JSON object like so:
   "options":{"smsProvider": "manual", "emailProvider": "manual"}
 }
 ```
+
 * topic - The name of the topic as defined in the admin tool
 * parameters - One or more parameter values as an object
 * data - Substitution data e.g. {{name}} in the message template would be replaced by Eric.
