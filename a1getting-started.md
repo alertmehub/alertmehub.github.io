@@ -7,8 +7,8 @@ permalink: /getstarted/
 # Getting Started
 Getting started with the alertme service involves three simple steps:
 1.	[Signing up](#signing-up) and [creating topics](#creating-topics).
-2.	[Deploying the alertme component](deploying-the-component) into your application.
-3.	[Publishing alerts](publishing-alerts)
+2.	[Deploying the alertme component](#deploying-the-component) into your application.
+3.	[Publishing alerts](#publishing-alerts)
 
 ## Signing Up
 In order to use the Alertme service, you must first [sign up for an account](https://admin.alertmehub.com/register/)
@@ -54,11 +54,12 @@ ASP.NET
 If your portal is built on top of Microsoft ASP.NET MVC, then the process of deploying the component looks like this:
 1.	Download the latest JavaScript from https://github.com/alertmehub/alertme-component-javascript/tree/master/lib.  
 2.	Place the html tag in your View html. 
+```html
 <alertme-preference-center publisher="test.com" token="@ViewBag.CustomerToken"></alertme-preference-center>
 <script type="text/javascript" src="alertme-1.0.4.js"></script>
-
+````
 3.	In the controller, make an API call to get the token.
-```C#
+```cs
         public async Task<IActionResult> Alerts()
         {
             string tokenUrl = "https://api.alertmehub.com/api/v1/subscriber/token/" + User.Identity.Name;
