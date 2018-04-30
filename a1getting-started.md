@@ -20,6 +20,7 @@ After signing into the Alertme Administration portal, the first step is to defin
 * Low Balance Alert
 * Large Transaction Alert
 * Scheduled Transfer Reminder
+
 The topics you define will be driven by your business model.
 The following information is required to set up a topic.
 
@@ -54,11 +55,14 @@ ASP.NET
 If your portal is built on top of Microsoft ASP.NET MVC, then the process of deploying the component looks like this:
 1.	Download the latest JavaScript from https://github.com/alertmehub/alertme-component-javascript/tree/master/lib.  
 2.	Place the html tag in your View html. 
+
 ``` html
 <alertme-preference-center publisher="test.com" token="@ViewBag.CustomerToken"></alertme-preference-center>
 <script type="text/javascript" src="alertme-1.0.4.js"></script>
 ````
+
 3.	In the controller, make an API call to get the token.
+
 ``` cs
         public async Task<IActionResult> Alerts()
         {
