@@ -54,12 +54,12 @@ ASP.NET
 If your portal is built on top of Microsoft ASP.NET MVC, then the process of deploying the component looks like this:
 1.	Download the latest JavaScript from https://github.com/alertmehub/alertme-component-javascript/tree/master/lib.  
 2.	Place the html tag in your View html. 
-```html
+``` html
 <alertme-preference-center publisher="test.com" token="@ViewBag.CustomerToken"></alertme-preference-center>
 <script type="text/javascript" src="alertme-1.0.4.js"></script>
 ````
 3.	In the controller, make an API call to get the token.
-```cs
+``` cs
         public async Task<IActionResult> Alerts()
         {
             string tokenUrl = "https://api.alertmehub.com/api/v1/subscriber/token/" + User.Identity.Name;
@@ -84,4 +84,21 @@ If your portal is built on top of Microsoft ASP.NET MVC, then the process of dep
 
 ## Publishing Alerts
 
+Publishing alerts is done through our API.  
+
+To publish an alert, make a POST request to https://api.alertmehub.com/api/v1/alert/
+Set the authorization header to your API key.
+And set the document body to a JSON object like so:
+``` JSON
+{
+  "topic": "topic1",
+  "parameters":{"parameter1": 100},
+  "data":{"name": "Eric"},
+  "options":{"smsProvider": "manual", "emailProvider": "manual"}
+}
+```
+* topic - The name of the topic as defined in the admin tool
+* parameters - One or more parameter values as an object
+* data - Substitution data e.g. {{name}} in the message template would be replaced by Eric.
+* options - smsProvider and emailProvider.  If set to manual, then the message is not sent, and only the email addresses and mobile phone numbers are returned - so that you can "manually" send them on your side.  If left blank or set to "alertme" then the alertme service will send the text/email.
 
