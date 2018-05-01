@@ -55,14 +55,15 @@ ASP.NET
 If your portal is built on top of Microsoft ASP.NET MVC, then the process of deploying the component looks like this:
 1.	Download the latest JavaScript from https://github.com/alertmehub/alertme-component-javascript/tree/master/lib.  
 2.	Place the html tag in your View html. 
+3.	In the controller, make an API call to get the token.
 
+HTML View
   ``` html
   <alertme-preference-center publisher="test.com" token="@ViewBag.CustomerToken"></alertme-preference-center>
   <script type="text/javascript" src="alertme-1.0.4.js"></script>
   ````
 
-3.	In the controller, make an API call to get the token.
-
+ASP.NET Controller
 ``` cs
         public async Task<IActionResult> Alerts()
         {
