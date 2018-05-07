@@ -8,3 +8,6 @@ github_username:  layne1990
 
 sass:
     style: compressed
+
+header_pages:
+ - a1getting-started.md
