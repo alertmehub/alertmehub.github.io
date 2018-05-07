@@ -12,5 +12,6 @@ sass:
 header_pages:
  - a1getting-started.md
 
+markdown: kramdown
 highlighter: rouge
 
