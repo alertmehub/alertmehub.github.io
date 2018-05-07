@@ -11,3 +11,6 @@ sass:
 
 header_pages:
  - a1getting-started.md
+
+highlighter: rouge
+

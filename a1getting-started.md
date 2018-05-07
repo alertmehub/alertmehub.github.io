@@ -11,11 +11,13 @@ Getting started with the alertme service involves three simple steps:
 3.	[Publishing alerts](#publishing-alerts)
 
 ## Signing Up
+-----
 In order to use the Alertme service, you must first [sign up for an account](https://admin.alertmehub.com/register/)
 
 Pick a publisher id for your organization – typically the domain where the Alertme component will be placed.  Pick a password, and provide the name and email of the administrator for this publisher id.  The email will only be used to contact the administrator with important information about the Alertme service.
 
 ## Creating Topics
+-----
 After signing into the Alertme Administration portal, the first step is to define the Topics to which subscribers can subscribe to receive alerts.  For example, the bank contoso.com might define the following topics:
 * Low Balance Alert
 * Large Transaction Alert
@@ -49,6 +51,7 @@ You can provide separate messages for emails and SMS text.  You can also provide
 The subject of the email will be the Topic Name, and the Topic Name will also be prepended to the SMS text.  The email will come from [publisherId]@mail.alertmehub.com.
 
 ## Deploying the component
+-----
 The alertme component is the way that your users can subscribe to the alert topics that you’ve defined.  It must be placed on a page of your existing portal.  There are several different ways to accomplish this, depending on your portal technology stack.
 
 ASP.NET
@@ -70,7 +73,8 @@ ASP.NET Controller
             string tokenUrl = "https://api.alertmehub.com/api/v1/subscriber/token/" + User.Identity.Name;
             using (var httpClient = new HttpClient())
             {
-                httpClient.DefaultRequestHeaders.Add("Authorization", "4f0c8355d0107f3e4b4705b85085506a4567debfb0842d4b2ab1ee38dcd62ac5");
+                httpClient.DefaultRequestHeaders.Add("Authorization",
+                "4f0c8355d0107f3e4b4705b85085506a4567debfb0842d4b2ab1ee38dcd62ac5");
 
                 try
                 {
@@ -88,6 +92,7 @@ ASP.NET Controller
 ```
 
 ## Publishing Alerts
+-----
 
 Publishing alerts is done through our API.  
 
