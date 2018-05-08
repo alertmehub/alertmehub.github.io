@@ -10,7 +10,8 @@ sass:
     style: compressed
 
 header_pages:
- - a1getting-started.md
+ - getting-started.md
+ - pricing.md
 
 markdown: kramdown
 highlighter: rouge

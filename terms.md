@@ -3,7 +3,7 @@ layout: page
 permalink: /terms/
 ---
 
-# Terms of Service
+# Terms of Use
 Thanks for choosing RDA Corporation (RDA)! Please carefully read these terms of use as they form a part of the legal agreement between you and RDA. 
 BY ACCEPTING THESE TERMS OF USE, EITHER BY CLICKING A BOX INDICATING YOUR ACCEPTANCE OR BY EXECUTING AN ORDER THAT REFERENCES THESE TERMS OF USE, YOU AGREE TO THE TERMS OF THE AGREEMENT. IF YOU ARE ENTERING INTO THIS AGREEMENT ON BEHALF OF A COMPANY OR OTHER LEGAL ENTITY, YOU REPRESENT AND WARRANT THAT YOU HAVE THE AUTHORITY TO BIND SUCH ENTITY TO THE AGREEMENT, IN WHICH CASE THE TERMS "YOU", "YOUR" OR "CUSTOMER" SHALL REFER TO SUCH ENTITY AND ITS AFFILIATES AS APPLICABLE. IF YOU DO NOT HAVE SUCH AUTHORITY, OR IF YOU DO NOT AGREE WITH THESE TERMS OF USE, YOU MUST NOT ACCEPT THIS AGREEMENT AND MAY NOT USE THE SERVICE.
 These Terms of Use together with the applicable Order(s) form the full legal agreement (the "Agreement") between Customer and RDA Corporation, a Delaware corporation, and is made as of the date the Customer first completes an Order and accepts these Terms of Use ("Effective Date"). If you are a User of the Service on behalf of Customer, and RDA and Customer have entered into a separate written agreement regarding the Service which is signed by Customer and RDA, then the terms of that agreement (and not these Terms of Use) define the terms and conditions under which Customer and User is permitted to use the Service.
