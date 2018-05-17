@@ -3,7 +3,7 @@ layout: page
 permalink: /pricing/
 ---
 
-# Pricing & Support
+# Pricing and Support
 
 ## Pricing
 Alertme is currently in an open beta period.  The beta period is free of charge and enforces the following hard limits:
